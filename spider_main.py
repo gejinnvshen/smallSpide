@@ -29,7 +29,7 @@
 ### 网页编码
 
 
-from baike_spider import url_manager, html_downloader, html_outputer, html_parser
+import url_manager, html_downloader, html_outputer, html_parser
 
 
 class SpiderMain(object):
@@ -64,6 +64,6 @@ class SpiderMain(object):
         self.outputer.output_html()
 
 if __name__ == "__main__":
-    root_url = "http://baike.baidu.com/view/21087.htm"
+    root_url = "https://baike.baidu.com/item/%E9%99%88%E6%95%B0"
     obj_spider = SpiderMain()
     obj_spider.craw(root_url)
